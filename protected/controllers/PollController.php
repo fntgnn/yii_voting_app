@@ -112,6 +112,9 @@ class PollController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
+	public static hello(){
+		echo 'hello';
+	}
 
 	/**
 	 * Lists all models.
@@ -171,4 +174,6 @@ class PollController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	
 }

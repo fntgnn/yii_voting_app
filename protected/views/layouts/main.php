@@ -17,11 +17,11 @@
 
 	<div id="header">
 		<nav class="navbar navbar-light">
-			<a href="#" class="navbar-brand"><?php echo CHtml::encode(Yii::app()->name); ?></a>
+			<a href="<?php echo Yii::app()->request->baseUrl; ?>" class="navbar-brand"><?php echo CHtml::encode(Yii::app()->name); ?></a>
 			<ul class="nav navbar-nav pull-right">
 				<?php if(Yii::app()->user->isGuest): ?>
 					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('site/register');?>" class="nav-link">Sign up</a></li>
-					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('site/login');?>" class="nav-link">Sign in</a></li> 
+					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('site/login');?>" class="nav-link">Sign in</a></li>
 				<?php else: ?>
 					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('site/logout');?>" class="nav-link">Logout</a></li>
 				<?php endif; ?>
@@ -34,8 +34,6 @@
 
 </div><!-- page -->
 
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery-3.2.1.min.js">
-</script>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/bootstrap/js/bootstrap.min.js">
 </script>
 </body>

@@ -3,14 +3,19 @@
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
+Yii::setPathOfAlias('chartjs', dirname(__FILE__).'/../extensions/yii-chartjs');
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Voting App',
 
+	'defaultController'=>'vote',
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array(
+		'log',
+		'chartjs'
+	),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -74,6 +79,9 @@ return array(
 			),
 		),
 
+		'chartjs'=>array(
+			'class' => 'chartjs.components.ChartJs',
+		),
 	),
 
 	// application-level parameters that can be accessed

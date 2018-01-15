@@ -1,22 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "polls".
+ * This is the model class for table "options".
  *
- * The followings are the available columns in table 'polls':
+ * The followings are the available columns in table 'options':
  * @property integer $id
- * @property string $name
- * @property integer $user_id
- * @property string $timestamp
+ * @property string $text
+ * @property integer $votes
+ * @property integer $poll_id
  */
-class Poll extends CActiveRecord
+class Option extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'polls';
+		return 'options';
 	}
 
 	/**
@@ -27,12 +27,12 @@ class Poll extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, user_id ', 'required'),
-			array('user_id', 'numerical', 'integerOnly'=>true),
-			array('name', 'length', 'max'=>255),
+			array('text, votes, poll_id', 'required'),
+			array('votes, poll_id', 'numerical', 'integerOnly'=>true),
+			array('text', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('name', 'safe', 'on'=>'search'),
+			array('text, votes' , 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,8 +44,7 @@ class Poll extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
-			'options' => array(self::HAS_MANY, 'Option', 'poll_id'),
+			'poll' => array(self::BELONGS_TO, 'Poll', 'poll_id'),
 		);
 	}
 
@@ -56,9 +55,9 @@ class Poll extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'user_id' => 'User',
-			'timestamp' => 'Timestamp',
+			'text' => 'Text',
+			'votes' => 'Votes',
+			'poll_id' => 'Poll',
 		);
 	}
 
@@ -81,9 +80,9 @@ class Poll extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('user_id',$this->user_id);
-		$criteria->compare('timestamp',$this->timestamp,true);
+		$criteria->compare('text',$this->text,true);
+		$criteria->compare('votes',$this->votes);
+		$criteria->compare('poll_id',$this->poll_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -94,24 +93,10 @@ class Poll extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Poll the static model class
+	 * @return Option the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
-
-
-	public function getData(){
-		$graphData = [];
-		foreach($this->options as $opt){
-			echo $opt->votes . '<br>';
-			$graphData[] = array(
-                            "value" => $opt->votes,
-                            "color" =>  '#' . str_pad(dechex(mt_rand(0, 0xFFFFFF)), 6, '0', STR_PAD_LEFT),
-                            "label" => $opt->text
-                        );
-		}
-		return $graphData;
 	}
 }
