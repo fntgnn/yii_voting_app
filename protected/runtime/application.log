@@ -1,0 +1,634 @@
+2018/01/15 10:59:55 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "login". in C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiivoting/index.php/login
+---
+2018/01/15 11:00:31 [error] [exception.CException] CException: Property "LoginForm.email" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2747): CComponent->__get('email')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'email', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'email', Array)
+#4 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'email')
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yiivoting/index.php/site/login
+---
+2018/01/15 11:03:07 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(480): tag()
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(515): button()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\site\login.php(46): submitButton()
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): SiteController->renderFile()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderPartial()
+#8 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(98): SiteController->render()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiivoting/index.php/site/login
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\site\login.php (46)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php (98)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php (13)
+2018/01/15 11:06:35 [error] [exception.CException] CException: Property "UserIdentity.email" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php(20): CComponent->__get('email')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\LoginForm.php(54): UserIdentity->authenticate()
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiivoting/index.php/site/login
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/login
+---
+2018/01/15 11:07:51 [error] [exception.CException] CException: Property "UserIdentity.email" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php(24): CComponent->__get('email')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\LoginForm.php(54): UserIdentity->authenticate()
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiivoting/index.php/site/login
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/login
+---
+2018/01/15 11:08:48 [error] [exception.CException] CException: Property "UserIdentity.email" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php(20): CComponent->__set('email', 'dggg')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\LoginForm.php(53): UserIdentity->__construct('dggg', 'fhhh')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiivoting/index.php/site/login
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/login
+---
+2018/01/15 11:09:12 [error] [exception.CException] CException: Property "UserIdentity.email" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php(20): CComponent->__set('email', 'dggg')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\LoginForm.php(53): UserIdentity->__construct('dggg', 'fhhh')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiivoting/index.php/site/login
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/login
+---
+2018/01/15 11:13:12 [error] [php] Object of class User could not be converted to string (C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php:29)
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiivoting/index.php/site/login
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php (29)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\LoginForm.php (54)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php (94)
+2018/01/15 11:24:59 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\RegisterForm.php:26
+Stack trace:
+#0 [internal function]: YiiBase::autoload('RegisterForm')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(102): spl_autoload_call('RegisterForm')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 11:26:49 [error] [exception.CException] CException: Property "RegisterForm.rememberMe" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2747): CComponent->__get('rememberMe')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1933): CHtml::resolveValue(Object(RegisterForm), 'rememberMe')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(898): CHtml::activeCheckBox(Object(RegisterForm), 'rememberMe', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\site\register.php(43): CActiveForm->checkBox(Object(RegisterForm), 'rememberMe')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('register', Array, true)
+#8 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(114): CController->render('register', Array)
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 11:30:29 [error] [exception.ParseError] ParseError: syntax error, unexpected '}' in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:110
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/register
+---
+2018/01/15 11:30:40 [error] [exception.CException] CException: RegisterForm and its behaviors do not have a method or closure named "getTableSchema". in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CUniqueValidator.php(96): CComponent->__call('getTableSchema', Array)
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\validators\CValidator.php(201): CUniqueValidator->validateAttribute(Object(RegisterForm), 'email')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(RegisterForm), Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(110): CModel->validate()
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/register
+---
+2018/01/15 11:30:55 [error] [exception.ParseError] ParseError: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:120
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/register
+---
+2018/01/15 11:30:57 [error] [exception.ParseError] ParseError: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:120
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 11:31:12 [error] [exception.ParseError] ParseError: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:121
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 11:31:13 [error] [exception.ParseError] ParseError: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:121
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 11:31:23 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:127
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 11:31:52 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:127
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 11:32:39 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php:127
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('register/')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiivoting/index.php/site/register
+---
+2018/01/15 12:01:10 [error] [php] Object of class CWebUser could not be converted to string (C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\site\index.php:8)
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): SiteController->renderFile()
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderPartial()
+#2 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiivoting/index.php
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\site\index.php (8)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php (32)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php (13)
+2018/01/15 12:05:58 [error] [php] Undefined property: UserIdentity::$name (C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php:50)
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\auth\CWebUser.php(235): UserIdentity->getName()
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\LoginForm.php(73): CWebUser->login()
+#2 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\SiteController.php(94): LoginForm->login()
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiivoting/index.php/site/login
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php (50)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\components\UserIdentity.php (50)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\LoginForm.php (73)
+2018/01/15 12:09:08 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\Users\office1\prove\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll/admin')
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiivoting/index.php/poll/admin
+---
+2018/01/15 12:15:54 [error] [php] Trying to get property 'user' of non-object (C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_view.php:17)
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): PollController->renderFile()
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(182): CListView->run()
+#6 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php(19): PollController->widget()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): PollController->renderInternal()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): PollController->renderFile()
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): PollController->renderPartial()
+#11 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(122): PollController->render()
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionIndex()
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): PollController->runAction()
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PollController->filterAccessControl()
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): PollController->runActionWithFilters()
+#21 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PollController->run()
+#22 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiivoting/index.php/poll/
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_view.php (17)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php (19)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php (122)
+2018/01/15 12:16:40 [error] [exception.CException] CException: Property "Poll.user" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_view.php(17): CActiveRecord->__get('user')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('C:\\Users\\office...')
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, false)
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\Users\\office...', Array)
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#15 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(122): CController->render('index', Array)
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionIndex()
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll')
+#27 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yiivoting/index.php/poll/
+---
+2018/01/15 12:16:51 [error] [exception.CException] CException: Property "Poll.users" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('users')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_view.php(17): CActiveRecord->__get('users')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('C:\\Users\\office...')
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, false)
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\Users\\office...', Array)
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#15 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(122): CController->render('index', Array)
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionIndex()
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll')
+#27 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yiivoting/index.php/poll/
+---
+2018/01/15 12:16:56 [error] [exception.CException] CException: Property "Poll.Users" is not defined. in C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Users')
+#1 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_view.php(17): CActiveRecord->__get('Users')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('C:\\Users\\office...')
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, false)
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\Users\\office...', Array)
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#15 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(122): CController->render('index', Array)
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionIndex()
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll')
+#27 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yiivoting/index.php/poll/
+---
+2018/01/15 12:18:06 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\Users\office1\prove\xampp\htdocs\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): PollController->renderInternal()
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): PollController->renderFile()
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#4 unknown(0): CListView->renderSection()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(182): CListView->run()
+#8 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php(19): PollController->widget()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): PollController->renderInternal()
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): PollController->renderFile()
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): PollController->renderPartial()
+#13 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(122): PollController->render()
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionIndex()
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): PollController->runAction()
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PollController->filterAccessControl()
+#20 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#21 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): PollController->runActionWithFilters()
+#23 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PollController->run()
+#24 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#25 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiivoting/index.php/poll/
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_view.php (17)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php (19)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php (122)
+2018/01/15 12:19:01 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\models\User.php:45
+Stack trace:
+#0 [internal function]: YiiBase::autoload('User')
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(397): spl_autoload_call('User')
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(182): CActiveRecord::model('User')
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(231): CActiveFinder->getModel('User')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), 'user')
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(915): CActiveFinder->__construct(Object(Poll), 'user')
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(282): CActiveRecord->getActiveFinder('user')
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('user')
+#8 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_view.php(17): CActiveRecord->__get('user')
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('C:\\Users\\office...')
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, false)
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\Users\\office...', Array)
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(182): CBaseListView->run()
+#17 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#20 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#21 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#22 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(122): CController->render('index', Array)
+#23 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionIndex()
+#24 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#25 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#26 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#28 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#29 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#30 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#31 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#32 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#33 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll')
+#34 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#35 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#36 {main}
+REQUEST_URI=/yiivoting/index.php/poll/
+---
+2018/01/15 12:20:58 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_form.php:29
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#2 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\create.php(18): CController->renderPartial('_form', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#7 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(73): CController->render('create', Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionCreate()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll/create')
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiivoting/index.php/poll/create
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/login
+---
+2018/01/15 12:21:10 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_form.php:29
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#2 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\create.php(18): CController->renderPartial('_form', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#7 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(73): CController->render('create', Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionCreate()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll/create')
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiivoting/index.php/poll/create
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/login
+---
+2018/01/15 12:21:33 [error] [exception.ParseError] ParseError: syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\_form.php:29
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#2 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\views\poll\create.php(18): CController->renderPartial('_form', Array)
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\Users\\office...')
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Users\\office...', Array, true)
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\Users\\office...', Array, true)
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#7 C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php(73): CController->render('create', Array)
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PollController->actionCreate()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('poll/create')
+#19 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yiivoting/index.php/poll/create
+HTTP_REFERER=http://localhost:8080/yiivoting/index.php/site/login
+---
+2018/01/15 12:23:42 [error] [php] Indirect modification of overloaded property Poll::$attributes has no effect (C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php:68)
+Stack trace:
+#0 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): PollController->runAction()
+#1 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PollController->filterAccessControl()
+#4 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CController.php(265): PollController->runActionWithFilters()
+#7 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PollController->run()
+#8 C:\Users\office1\prove\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\office1\prove\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiivoting/index.php/poll/create
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\protected\controllers\PollController.php (68)
+in C:\Users\office1\prove\xampp\htdocs\yiivoting\index.php (13)

@@ -98,6 +98,27 @@ class SiteController extends Controller
 		$this->render('login',array('model'=>$model));
 	}
 
+	public function actionRegister(){
+		$model = new RegisterForm;
+		$newUser = new User;
+		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form'){
+			echo CActivateForm::validate($model);
+			Yii::app()->end();
+		}
+		if(isset($_POST['RegisterForm'])){
+			$model->attributes = $_POST['RegisterForm'];
+			$newUser->name = $model->name;
+			$newUser->password = CPasswordHelper::hashPassword($model->password);
+			$newUser->email = $model->email;
+
+			if($newUser->save()){
+				echo "bravo";
+				$this->redirect('login');
+			}
+		}
+		$this->render('register', array('model'=>$model));
+	}
+
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */
