@@ -1,6 +1,6 @@
 <?php
 
-class PollController extends Controller
+class ProfileController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -112,10 +112,6 @@ class PollController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
-	public static hello(){
-		echo 'hello';
-	}
-
 	/**
 	 * Lists all models.
 	 */
@@ -147,6 +143,13 @@ class PollController extends Controller
 		));
 	}
 
+	public function actionGetPollsByUser(){
+		$polls = Poll::model()->findAllByAttributes(array('user_id'=>Yii::app()->user->id));
+
+		echo CJSON::encode($polls);
+		// echo json_encode($polls);
+	}
+
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
@@ -175,5 +178,6 @@ class PollController extends Controller
 		}
 	}
 
-	
+
+
 }

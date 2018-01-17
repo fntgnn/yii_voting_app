@@ -23,6 +23,7 @@
 					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('site/register');?>" class="nav-link">Sign up</a></li>
 					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('site/login');?>" class="nav-link">Sign in</a></li>
 				<?php else: ?>
+					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('profile/index');?>" class="nav-link">My profile</a></li>
 					<li class="navbar-item"><a href="<?php echo Yii::app()->createAbsoluteUrl('site/logout');?>" class="nav-link">Logout</a></li>
 				<?php endif; ?>
 			</ul>
